@@ -1,0 +1,29 @@
+{
+  "vlan_mapping": {
+    "192.168.1": "VLAN 10 - Office",
+    "192.168.2": "VLAN 20 - Guests",
+    "192.168.3": "VLAN 30 - Servers",
+    "10.0.0":    "VLAN 40 - Management",
+    "172.16.0":  "VLAN 50 - DMZ"
+  },
+  "nmap": {
+    "scan_type": "-sS",
+    "timing": "-T4",
+    "max_retries": 1,
+    "extra_flags": []
+  },
+  "api": {
+    "mac_vendor_url": "https://api.macvendors.com/",
+    "timeout": 2,
+    "rate_limit_seconds": 1.1
+  },
+  "arp": {
+    "timeout": 2
+  },
+  "output": {
+    "save_json": false,
+    "save_csv": false,
+    "save_html": true,
+    "output_dir": "reports"
+  }
+}
